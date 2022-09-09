@@ -10,14 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>NFTasty</title>
 </head>
 
 <body>
     <header>
-        <div class="header"><a href="../index.html"><img class="logoMenu" src="../imagenes/Logo.png" alt="">
-                <h1>NFTasty</h1>
-            </a>
+        <div class="header" data-aos="zoom-out-down"
+        data-aos-easing="linear"
+        data-aos-duration="600">
+            <div class="logo">
+                <a href="../index.html"><img class="logoMenu" src="../imagenes/Logo.png" alt="">
+                    <h1>NFTasty</h1>
+                </a>
+            </div>
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
@@ -26,7 +32,7 @@
                     <li><a href="./pages/vender.html">Vender</a></li>
                 </ul>
             </nav>
-            </div>
+        </div>
     </header>
     <main>
         <section>
@@ -148,8 +154,10 @@
         <div class="copy">
             <p class="logoabajo">Copyrright 2022 NFTasty</p>
             <a href="../index.html"><img class="logoAbajo" src="../imagenes/Logo.png" alt=""></a>
-            </div>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background-color: #141a1f;
+    
+    background-image: url(../imagenes/low-poly-grid-haikei.svg);
     color: white;
     font-family: 'Raleway', sans-serif;
     min-height: 100%;
 }
-
 h1 {
     font-family: 'Mukta', sans-serif;
     display: inline-block;
@@ -30,9 +30,14 @@ a {
 
 /*Comienzo de css pagina contactanos*/
 .logoMenu {
-    width: 40px;
+    width: 40px;   
 }
-
+.logo{
+    padding: 30px;
+}
+.logo a h1{
+    display: inline-block;
+}
 nav {
     position: sticky;
     top: 0px;
@@ -44,10 +49,11 @@ nav {
     margin: 2.5rem;
     background-color: #00000015;
     border-radius: 10px;
+    transition: all 0.9s ease;
 }
 
 .menu li:hover {
-    transition: 0.9s;
+    
     background: linear-gradient(90deg, rgba(35, 37, 36, 1) 0%, rgba(20, 26, 31, 0.6983758700696056) 0%, rgba(35, 70, 98, 1) 67%, rgba(20, 26, 31, 0.47795823665893267) 100%);
     box-shadow: 0 7px 10px #235a8873;
     transform: scale(1.07);
@@ -55,10 +61,11 @@ nav {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin: 0px;
-    text-align: center;
-    background-color: rgba(4, 22, 22, 0.37);
+    background-color: #050e14de;
     position: sticky;
     top: 0%;
     box-shadow:
@@ -121,6 +128,7 @@ textarea {
     background-color: #3088cf;
     color: white;
     width: 90px;
+    
 }
 
 .boton:hover {
@@ -176,7 +184,7 @@ textarea {
 
 .pie {
     text-align: center;
-    background-color: #050e1459;
+    background-color: #050e14de;
     bottom: 20px;
     bottom: 0px;
     width: 100%;
@@ -198,15 +206,17 @@ textarea {
     background-color: #3088cf;
     color: white;
     cursor: pointer;
+    border: none;
 
 
 }
 
 .botonNftIndex button:hover {
     transform: translateY(-7%);
-    box-shadow: 0 2px 10px white;
+    box-shadow: 0 2px 12px white;
     border: solid 2px #3088cf;
     transition: all 0.5s ease;
+    border: none;
 }
 
 .imgIndex1 {
@@ -253,7 +263,7 @@ textarea {
     background: linear-gradient(90deg, rgba(35, 37, 36, 1) 0%, rgba(37, 7, 54, 1) 0%, rgba(94, 35, 194, 1) 50%, rgba(38, 8, 57, 1) 100%);
     box-shadow: 0px 3px 15px #235a88;
     cursor: default;
-
+    transition: all 0.7s ease;
 
 }
 
@@ -265,7 +275,7 @@ textarea {
 .card:hover {
     box-shadow: 0px 3px 20px #3088cf;
     transform: translateY(-3%);
-    transition: all 0.7s ease;
+    
 }
 
 .card .contenido {
@@ -293,11 +303,11 @@ textarea {
     padding: 4px;
     border: 1px solid #6da6d4;
     border-radius: 6px;
-
+    transition: all 0.4s ease;
 }
 
 .card .contenido a:hover {
-    transition: all 0.4s ease;
+    
     background-color: #6da6d4;
     box-shadow: 0 1px 9px white;
 }
@@ -328,12 +338,13 @@ section .titulo {
     border: 2px #fdfdfdaf solid;
     box-shadow: 0 3px 16px #684170;
     border-radius: 19px;
+    transition: all 0.4s ease;
 }
 
 .listaCategoria li:hover {
     box-shadow: 0 5px 16px #c61ae9;
     transform: translateY(-9%);
-    transition: all 0.9s ease;
+    
 }
 
 .categorias {
@@ -401,6 +412,7 @@ section .titulo {
     background: rgb(35, 37, 36);
     background: linear-gradient(90deg, rgba(35, 37, 36, 1) 0%, rgba(122, 38, 140, 0.9467592592592593) 0%, rgba(42, 16, 103, 1) 51%, rgba(43, 1, 116, 0.9606481481481481) 100%);
     box-shadow: 1px 9px 17px #684170;
+    transition: all 0.9s ease;
 }
 
 .moneda img {
@@ -417,7 +429,7 @@ section .titulo {
 
 .moneda:hover {
     transform: translateY(-3%);
-    transition: all 0.9s ease;
+    
 }
 
 .videoTutorial {
