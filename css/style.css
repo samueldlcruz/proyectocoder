@@ -321,7 +321,7 @@ section .titulo {
 
 .listaCategoria li {
 
-    width: 200px;
+    width: 100px;
     margin: 20px auto;
     padding: 5px;
     background-color: #9b09b8;
@@ -340,7 +340,6 @@ section .titulo {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
     border-radius: 15px;
     margin: 30px;
     padding: 20px;
@@ -664,8 +663,6 @@ section .titulo {
 /*categorias*/
 .mainCategorias {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 4fr;
     gap: 0px 0px;
@@ -675,6 +672,7 @@ section .titulo {
         "allCategorias";
     text-align: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .titulo {
