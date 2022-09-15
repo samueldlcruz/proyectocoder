@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&display=swap" rel="stylesheet">
+    <!--boots-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>NFTasty</title>
@@ -16,23 +19,43 @@
 
 <body>
     <header>
-        <div class="header" data-aos="zoom-out-down"
-        data-aos-easing="linear"
-        data-aos-duration="601">
-            <div class="logo">
-                <a href="../index.html"><img class="logoMenu" src="./imagenes/Logo.png" alt="">
-                    <h1>NFTasty</h1>
+        <nav class="navbar p-3 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logoMenu" src="../imagenes/Logo.png" alt="Logo" class="d-inline-block align-text-top">
+                    <h1 class="text-light">NFTasty</h1>
                 </a>
+                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvasBg" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="logoMenu off" src="../imagenes/Logo.png" alt="Logo"
+                            class="d-inline-block align-text-top">
+                        <button type="button" class="btn-close btnoff" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-4 menuUl">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./pages/mediosdepago.html">Medios de pago</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./pages/categorias.html">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./pages/vender.html">Vender</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/mediosdepago.html">Medios de pago</a></li>
-                    <li><a href="./pages/categorias.html">Categorias</a></li>
-                    <li><a href="./pages/vender.html">Vender</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
     <main>
         <section>
@@ -42,11 +65,26 @@
                         in unde molestias placeat autem voluptatibus eaque dicta suscipit quasi vel dolore repellat.</p>
                 </div>
                 <div class="botonNftIndex">
-                    <button href="#">Ver más</button>
+                    <button class="btnIndex" href="#">Ver más</button>
                 </div>
-
-                <div class="nftIndexImg">
-                    <img src="./imagenes/nftindex.png" alt="">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade nftIndexImg" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carrouselIndex">
+                            <img src="./imagenes/nftindex.png" class="d-block w-20" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/nftindex2.png" class="d-block w-20" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/nftindex4.png" class="d-block w-20" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/nftindex3.png" class="d-block w-20" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/nftindex5.png" class="d-block w-20" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,8 +194,13 @@
             <a href="../index.html"><img class="logoAbajo" src="../imagenes/Logo.png" alt=""></a>
         </div>
     </footer>
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <!--Boots-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

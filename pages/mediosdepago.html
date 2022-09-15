@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&display=swap" rel="stylesheet">
+    <!--boots-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../imagenes/Logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,22 +19,43 @@
 
 <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <a href="../index.html"><img class="logoMenu" src="../imagenes/Logo.png" alt="">
-                    <h1>NFTasty</h1>
-            </a>
+        <nav class="navbar p-3 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img class="logoMenu" src="../imagenes/Logo.png" alt="Logo" class="d-inline-block align-text-top">
+                    <h1 class="text-light">NFTasty</h1>
+                </a>
+                <button class="navbar-toggler btnNav" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvasBg" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="logoMenu" src="../imagenes/Logo.png" alt="Logo"
+                            class="d-inline-block align-text-top">
+                        <button type="button" class="btn-close btnoff" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-4 menuUl">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page"
+                                    href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./mediosdepago.html">Medios de pago</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./categorias.html">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./vender.html">Vender</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Medios de pago</a></li>
-                    <li><a href="categorias.html">Categorias</a></li>
-                    <li><a href="vender.html">Vender</a></li>
-                </ul>
-            </nav>
-            <!------------------------------------------------------------------------>
-
+        </nav>
     </header>
     <main class="mainMediosDPago">
         <section class="mdpTitulo">
@@ -39,29 +63,23 @@
             <p>Actualmente poseemos diferentes medios de pagos</p>
         </section>
         <section class="mediosDePago">
-            <div class="bitcoinPaypal" data-aos="zoom-out-right"
-            data-aos-easing="linear"
-            data-aos-duration="600">
+            <div class="bitcoinPaypal" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600">
                 <div class="moneda">
                     <a href="#vidTuto"><img src="../imagenes/196543.png" alt="Bitcoin">
                         <P>Puedes cargar Bitcoin a tu cuenta desde una direccion personalizada, click aqui.</p>
                     </a>
                 </div>
-                <div class="moneda" data-aos="zoom-out-right"
-                data-aos-easing="linear"
-                data-aos-duration="600"><img src="../imagenes/Paypal_2014_logo.png" alt="Paypal">
+                <div class="moneda" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="600"><img
+                        src="../imagenes/Paypal_2014_logo.png" alt="Paypal">
                     <P>Puedes pagar atravez de tu cuenta Paypal.</p>
                 </div>
             </div>
-            <div class="cashCredit" data-aos="zoom-out-left"
-            data-aos-easing="linear"
-            data-aos-duration="600">
+            <div class="cashCredit" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
                 <div class="moneda Cash"><img src="../imagenes/currency.png" alt="Cash">
                     <P>Puedes reservar tu compra y pagar despues en efectivo en cualquier punto de tu pais.</p>
                 </div>
-                <div class="moneda credit" data-aos="zoom-out-left"
-                data-aos-easing="linear"
-                data-aos-duration="600"><img src="../imagenes/creditcard.png" alt="Crediycard">
+                <div class="moneda credit" data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="600">
+                    <img src="../imagenes/creditcard.png" alt="Crediycard">
                     <p>Aceptamos pagos con cualquier tarjeta de credito de Visa, MasterCard y Americanexpress.</p>
                 </div>
             </div>
@@ -86,10 +104,15 @@
         <div class="copy">
             <p class="logoabajo">Copyrright 2022 NFTasty</p>
             <a href="../index.html"><img class="logoAbajo" src="../imagenes/Logo.png" alt=""></a>
-            </div>
+        </div>
     </footer>
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <!--Boots-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
