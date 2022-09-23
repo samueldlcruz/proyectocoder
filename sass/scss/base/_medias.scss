@@ -1,0 +1,300 @@
+@media screen and (max-width: 500px) {
+    .menu li {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nftIndex {
+        display: grid;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nftIndexImg"
+            "indexNftInfo "
+            "botonNft ";
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    .botonNftIndex {
+        padding: 0px;
+        border: none;
+    }
+
+    .indexNftInfo {
+        font-size: 12px;
+        padding-top: 0px;
+
+    }
+
+    .nftIndexImg img {
+        width: 200px;
+
+    }
+     
+     .nftIndex .nftIndexImg {
+        width: 100%;
+        padding-left: 115px;
+    }
+
+
+
+    div .nftIndexImg2 {
+        width: 100%;
+    }
+
+    .nftIndexImg2 img {
+        width: 200px;
+    }
+
+    .header {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .pie .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+    }
+
+    .card img {
+        width: 150px;
+        height: 220;
+    }
+
+    .imgIndex1 .card {
+        width: 150px;
+        height: 310px;
+        align-items: center;
+    }
+
+    .imgIndex2 .card {
+        width: 150px;
+        height: 310px;
+        align-items: center;
+    }
+
+    .imgIndex1 {
+        display: grid;
+        grid-template-rows: 20% 20%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "grid-1 grid-2"
+            "grid-3 grid-4";
+        width: 200px;
+        height: 700px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .imgIndex1 .grid-1 {
+        grid-area: grid-1;
+    }
+
+    .imgIndex1 .grid-2 {
+        grid-area: grid-2;
+    }
+
+    .imgIndex1 .grid-3 {
+        grid-area: grid-3;
+    }
+
+    .imgIndex1 .grid-4 {
+        grid-area: grid-4;
+    }
+
+    .imgIndex2 {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "grid-5 grid-6"
+            "grid-7 grid-8";
+        width: 200px;
+        height: 700px;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .imgIndex1 .grid-5 {
+        grid-area: grid-5;
+    }
+
+    .imgIndex1 .grid-6 {
+        grid-area: grid-6;
+    }
+
+    .imgIndex1 .grid-7 {
+        grid-area: grid-7;
+    }
+
+    .imgIndex1 .grid-8 {
+        grid-area: grid-8;
+    }
+
+    /*medios de pagos*/
+    .mainMediosDPago {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "mdpTitulo mdpTitulo"
+            "mediosDePago mediosDePago"
+            "videoTutorial videoTutorial";
+        align-items: center;
+    }
+
+    .mdpTitulo {
+        grid-area: mdpTitulo;
+    }
+
+    .videoTutorial {
+        grid-area: videoTutorial;
+        width: 350px;
+        font-size: small;
+    }
+
+    .videoTutorial iframe {
+        width: 370px;
+        height: 250px;
+        padding-left: 20px;
+    }
+
+    .mediosDePago {
+        grid-area: mediosDePago;
+    }
+
+    .mediosDePago .moneda {
+        margin: 10px;
+    }
+
+    /*vender*/
+    .mainvender {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.2fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "vender"
+            "tycVenderp"
+            "vistaPrevia";
+        align-items: center;
+    }
+
+    .vender {
+        grid-area: vender;
+        font-size: 15px;
+        width: 300px;
+
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .tycVenderp {
+        grid-area: tycVenderp;
+        margin: 10px auto;
+    }
+
+    .vistaPrevia {
+        grid-area: vistaPrevia;
+        text-align: center;
+    }
+    .vistaPrevia .vistaCard {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .vistaPrevia img {
+        width: 200px;
+    }
+
+    /*categorias*/
+    .mainCategorias {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 4fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "titulo"
+            "listaCategoria"
+            "allCategorias";
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .titulo {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+    .listaCategoria {
+        grid-area: listaCategoria;
+        width: 350px;
+        font-size: 5px;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .allCategorias {
+        grid-area: allCategorias;
+    }
+
+    .allCategorias {
+        width: 390px;
+
+    }
+
+    .categorias {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .categorias .card {
+        height: 210px;
+    }
+
+    .categorias .card img {
+        width: 90px;
+        height: 70px;
+    }
+
+    .categorias .card p {
+        width: 50px;
+        font-size: 8px;
+    }
+
+    .categorias .card h3 {
+        font-size: small;
+    }
+
+    .categorias .card a {
+        font-size: small;
+        text-align: left;
+    }
+
+    .categorias .card .contenido {
+        width: 60px;
+
+    }
+
+    .categoriaNft {
+        font-size: 10px;
+    }
+}

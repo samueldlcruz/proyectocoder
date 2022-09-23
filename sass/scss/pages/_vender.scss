@@ -1,0 +1,95 @@
+.formVender {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: #00ff9d49;
+    border-style: solid;
+    background-color: rgba(9, 49, 49, 0.596);
+    width: 100%;
+    max-width: 450px;
+    flex-direction: column;
+    box-shadow: 0 10px 20px #014f8ba9;
+    border-radius: 10px;
+
+    .tituloNFT {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+
+        img {
+            width: 220px;
+            border: 3px solid #096939;
+            box-shadow: 0 2px 10px violet;
+        }
+
+        input {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.281);
+            border: 3px solid #684170a8;
+        }
+    }
+
+    .descripcionNft {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .tipoDeRed {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .precioDeNft {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+
+        .precioUsd {
+            background-color: #141a1f;
+            border: 3px solid #684170a8;
+        }
+    }
+
+    .tycVender {
+        margin: 10px;
+
+        div {
+            margin: 10px;
+        }
+    }
+}
+.vistaPrevia {
+    text-align: center;
+    .card {
+        align-items: center;
+        margin: 0 auto;
+        padding: 1rem;
+        border: #00ff9d49;
+        border-style: solid;
+        background-color: rgba(9, 49, 49, 0.596);
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+    
+        .botonNft {
+            margin-top: 1rem;
+        }
+    }
+}

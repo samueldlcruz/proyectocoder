@@ -1,0 +1,93 @@
+nav {
+    background-color: #050e1462;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .logoMenu {
+        margin-left: 20px;
+    }
+
+    .btnNav {
+        background-color: rgba(97, 70, 104, 0.623);
+        border: none;
+    }
+
+    .offcanvasBg {
+        background-color: #050e14de;
+    }
+
+    .btnoff {
+        filter: invert(100%);
+    }
+}
+
+.menuUl li {
+    --color: #560bad;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 9px;
+    font-weight: 500;
+    color: var(--color);
+    margin-right: 60px;
+}
+
+.menuUl li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.menuUl li:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.menuUl li:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
+
+.nftIndex {
+    height: 300px;
+
+    .nftIndexImg {
+        padding-left: 250px;
+    }
+}
+
+.vistaCard {
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*Ajustes de nav*/
+.aInicio {
+    background-color: #560bad;
+}
+
+.aMedios {
+    background-color: #560bad;
+}
+
+.aCategorias {
+    background-color: #560bad;
+}
+
+.aVender {
+    background-color: #560bad;
+}

@@ -1,0 +1,57 @@
+section .titulo {
+    margin-top: 20px auto;
+    text-align: center;
+}
+.listaCategoria {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    li {
+        width: 100px;
+        margin: 20px auto;
+        padding: 5px;
+        background-color: #9b09b8;
+        border: 2px #fdfdfdaf solid;
+        box-shadow: 0 3px 16px #684170;
+        border-radius: 19px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            box-shadow: 0 5px 16px #c61ae9;
+            transform: translateY(-9%);
+
+        }
+    }
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 20px;
+
+    .card img {
+        text-align: center;
+        width: 250px;
+        height: 180px;
+    }
+}
+
+.categoriaNft {
+    text-align: center;
+    background-color: #132b3f94;
+    width: 120px;
+    margin: 0px auto;
+    padding: 2px;
+    flex-direction: column;
+    border: solid #ecf0ee5b;
+    box-shadow: 0 3px 7px #3088cf;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 7px;
+}
