@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-image: url(/imagenes/low-poly-grid-haikei.svg);
+  background-image: url(../imagenes/low-poly-grid-haikei.svg);
   color: white;
   font-family: "Raleway", sans-serif;
   min-height: 100%;
